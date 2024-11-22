@@ -1,0 +1,36 @@
+{
+  "name": "is-inside-ci",
+  "version": "1.0.0",
+  "description": "Check if a value is inside-ci",
+  "type": "module",
+  "scripts": {
+    "test": "node --test && publint",
+    "prepublish": "fmt && test",
+    "fmt": "prettier -w *.{js,ts,json,md}"
+  },
+  "exports": "./index.js",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "keywords": [
+    "inside-ci"
+  ],
+  "author": "easrng",
+  "license": "WTFPL",
+  "devDependencies": {
+    "inside-ci": "^1.1.0",
+    "is-ci": "^3.0.1",
+    "prettier": "^3.3.3",
+    "publint": "^0.2.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easrng/is-inside-ci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/easrng/is-inside-ci/issues"
+  },
+  "homepage": "https://github.com/easrng/is-inside-ci#readme",
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+}
