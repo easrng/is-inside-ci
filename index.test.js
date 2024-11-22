@@ -10,7 +10,7 @@ test("inside-ci is inside-ci", () => {
   assert(isInsideCi(insideCi.insideCi));
 });
 
-test("in-ci is not inside-ci", () => {
+test("is-ci is not inside-ci", () => {
   assert(!isInsideCi(isCi));
   assert(!isInsideCi(isCi.default));
 });
